@@ -43,4 +43,11 @@ public class Menu {
         }
         return res/menuMap.size();
     }
+
+    public void printDishes() {
+        for (String dishName : menuMap.keySet()) {
+            System.out.println(dishName + " " + menuMap.get(dishName));
+        }
+        System.out.println();
+    }
 }

@@ -15,4 +15,12 @@ public class Restaurant {
         hTime = new HistoryTime(menu);
         allTables = new Tables(tableCapacities);
     }
+
+    public void printMenu() {
+        menu.printDishes();
+    }
+
+    public void printTables() {
+        allTables.print();
+    }
 }
